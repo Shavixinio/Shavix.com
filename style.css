@@ -4,70 +4,69 @@ html {
   overflow: hidden;
 }
 
-:root {
-  --text: #e4e8f3;
-  --background: #080a13;
-  --primary: #9dabd5;
-  --secondary: #573070;
-  --accent: #a85cb9;
-  --background-50: #edeff7;
-  --background-100: #dbdff0;
-  --background-200: #b7bfe1;
-  --background-300: #939fd2;
-  --background-400: #6f7fc3;
-  --background-500: #4b5eb4;
-  --background-600: #3c4c90;
-  --background-700: #2d396c;
-  --background-800: #1e2648;
-  --background-900: #0f1324;
-  --background-950: #080912;
-}
-
-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
 body {
-  background-color: var(--background);
-  color: var(--text);
+  background-color: #080a13;
+  color: #e4e8f3;
   font-family: nunito;
   font-size: larger;
 }
 
 hr {
-  color: var(--accent);
-  position: relative;
-  left: 700px;
-  margin-right: 1500px;
+  color: #a85cb9;
 }
 
-  h1 {
-    color: var(--primary);
-    position: relative;
-    left: 700px;
-  }
-  #about {
-  position: relative;
-  left: 700px;
+h1 {
+  color: #9dabd5;
 }
 
+#about,
 #contact {
   position: relative;
-  left: 700px;
 }
 
 a {
-  color: var(--secondary);
+  color: #573070;
 }
 
 footer {
   display: inline-block;
-  background-color: var(--background-900);
-  color: var(--secondary);
+  background-color: #0f1324;
+  color: #573070;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 30px;
+  height: 6%;
+}
+
+@media (min-width: 768px) {
+  hr,
+  h1,
+  #about,
+  #contact {
+    position: relative;
+    left: 700px;
+  }
+  hr {
+    margin-right: 1500px;
+  }
+}
+
+#profile-pic::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url("./images/avatar.png") no-repeat center;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+#github-link::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url("./images/github.svg") no-repeat center;
+  background-size: cover;
 }
