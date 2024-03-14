@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-html {
-  overflow: hidden;
-}
-
 body {
   background-color: #080a13;
   color: #e4e8f3;
   font-family: nunito;
   font-size: larger;
+  overflow: hidden;
 }
 
 hr {
