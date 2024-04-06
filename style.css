@@ -25,6 +25,14 @@ a {
   color: #573070;
 }
 
+#info {
+  border: solid red;
+  background-color: #990014;
+  border-radius: 5px;
+  width: 500px;
+  padding: 20px;
+}
+
 footer {
   display: inline-block;
   background-color: #0f1324;
