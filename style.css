@@ -21,6 +21,10 @@ a, a:visited {
   text-decoration: none;
 }
 
+#contact {
+  margin-bottom: 20px;
+}
+
 #about,
 #contact {
   display: flex;
@@ -38,4 +42,8 @@ a {
   border-radius: 5px;
   width: 500px;
   padding: 20px;
+}
+
+li {
+  list-style: none;
 }
